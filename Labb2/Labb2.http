@@ -1,0 +1,37 @@
+@Labb2_HostAddress = https://localhost:7294
+
+POST {{Labb2_HostAddress}}/api/authors
+Content-Type: application/json
+
+{
+  "id": 0,
+  "firstName": "Alex",
+  "lastName": "Elmgart"
+}
+
+###
+
+GET {{Labb2_HostAddress}}/api/authors
+
+###
+
+GET {{Labb2_HostAddress}}/api/books
+
+###
+
+GET {{Labb2_HostAddress}}/api/bookrentals
+
+###
+
+POST {{Labb2_HostAddress}}/api/bookrentals/rentbook
+Content-Type: application/json
+
+{
+  //BookRental
+}
+
+###
+
+PUT {{Labb2_HostAddress}}/api/bookrentals/returnbook/1
+
+###
